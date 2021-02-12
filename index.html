@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-warning">select your move</h3>
+            </div>
+            <div class="col">
+                <div class="shadow bg-info" @click="gameCheck(1)">rock</div>
+            </div>
+            <div class="col">
+                <div class="shadow bg-info" @click="gameCheck(2)">scissors</div>
+            </div>
+            <div class="col">
+                <div class="shadow bg-info" @click="gameCheck(3)">paper</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h3>Current Game</h3>
+            </div>
+            <div class="col">
+                <h4>your move: {{player}}</h4>
+            </div>
+            <div class="col">
+                <h4>computer move: {{computer}}</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h3>results: {{playerWin}}</h3>
+            </div>
+            <div class="col">
+                <h4>wins {{wins}}</h4>
+            </div>
+            <div class="col">
+                <h4>losses {{losses}}</h4>
+            </div>
+            <div class="col">
+                <h4>ties {{ties}}</h4>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="main.js"></script>
+</body>
+</html>
